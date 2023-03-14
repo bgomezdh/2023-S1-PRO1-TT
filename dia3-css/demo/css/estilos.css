@@ -1,0 +1,39 @@
+/* regla con selectores de etiqueta */
+
+body{
+    /* background-color: rgba(98, 231, 42, 0.721); */
+    background-image: url("../img/scaloneta.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px 300px;
+}
+
+h1{
+    background-color: aqua;
+}
+
+/* reglas con selectores de clases */
+
+.subtitulo{
+    color: red;
+}
+
+.txtCentrado{
+    text-align: center;
+}
+
+/* reglas con selectores de id */
+
+#parrafoImportante{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+}
+
+.listaDesordenada .verde{
+    color: rgb(78, 235, 78);
+}
+
+li{
+    color: red;
+    list-style-type: none;
+}
