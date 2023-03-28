@@ -1,0 +1,38 @@
+.contenedor{
+    background-color: blue;
+    width: 120px; /* Como % */
+    height: 130px;
+    padding: 15px;
+    border: solid 3px rgb(40, 208, 40);
+    margin: 30px 10px;
+
+    /* El tamaño total de mi div */
+
+    box-sizing: border-box;
+    /* lo que hace es descontar las propiedades de border y padding de la sumatoria total */
+
+
+    /* Colores:
+    
+    Margin: Rosa,
+    Border: Crema
+    Padding: verde
+    Contenido: Azul
+    
+    */
+}
+
+header{
+    height: 200px;
+    background-color: aqua;
+}
+
+main{
+    height: 500px;
+    background-color: blueviolet;
+}
+
+footer{
+    height: 200px;
+    background-color: bisque;
+}
