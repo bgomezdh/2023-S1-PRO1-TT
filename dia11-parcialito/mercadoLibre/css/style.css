@@ -1,0 +1,112 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+
+}
+ul,li{
+    list-style-type: none;
+}
+header{
+    height: 25vh;
+    background-color: #fff159;
+}
+.header-sec{
+    height: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.art-logo{
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.art-form{
+    width: 50%;
+    align-items: center;
+    display:flex;
+}
+
+.art-logo-rigth{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img-rigth{
+    width: 300px;
+}
+
+.logo-img{
+    width: 200px;
+
+}
+
+#buscar{
+    width: 100%;
+    height: 30px;
+}
+
+.form-result{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.button-art{
+    background-color: white;
+    height: 37px;
+
+}
+
+.art-direccion {
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.art-nav {
+    width: 50%;
+    align-items: center;
+    display:flex;
+}
+
+.flex-r {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#sec-nav{
+    justify-content: flex-start;
+    height: 10vh;
+}
+
+.nav-items{
+    width: 100%;
+}
+
+.nav-items ul{
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#main{
+    background-image: url('../img/banner.png');
+    height: 50vh;
+}

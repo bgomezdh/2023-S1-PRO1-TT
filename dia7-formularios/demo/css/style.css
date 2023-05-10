@@ -1,0 +1,104 @@
+/* Reglas css para estilos generales*/
+* { 
+    box-sizing: border-box; 
+ }
+     body {
+     margin: 0;
+     padding: 30px;
+  }	
+ ul, ol {
+    padding: 0;
+  }
+ li {
+    list-style-type: none; 
+ }
+ 
+ a { 
+   text-decoration: none; color: #000; 
+ }
+ 
+
+ /* Estrategia Desktop First propiedad = max-width */
+
+/* Reglas css para estilos de laptop 1024px*/
+.section-main{
+    background-color: rgb(233, 233, 233);
+    border-radius: 20px;
+    padding: 30px;
+    height: 95vh;
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.article{
+    width: 1800px;
+    height: 400px;
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 200px;
+    height: 260px;
+    border-radius: 20px;
+}
+
+.contenedor-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Reglas css para estilos Tablets 768px*/
+@media(max-width: 768px){
+    .article{
+        width: 300px;
+    }
+
+    .marca{
+        font-size: 20px;
+        color: green;
+    }
+
+    .precio{
+        font-size: 24px;
+        color: blue;
+    }
+
+    .section-main{
+        background-color: transparent;
+    }
+}
+
+
+/* Reglas css para estilos Telefono 320px*/
+@media(max-width: 420px){
+    body{
+        background-color: #e8e8e8;
+    }
+
+    .section-main{
+        padding: 0;
+        border: 2px solid #fff;
+    }
+
+    .precio{
+        color: red;
+    }
+
+    .precio, .marca{
+        margin: 5px;
+    }
+}
