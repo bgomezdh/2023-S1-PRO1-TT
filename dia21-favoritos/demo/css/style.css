@@ -1,0 +1,13 @@
+#lista a article img {
+    width: 200px;
+}
+
+#lista a article p {
+    text-align: center;
+}
+
+
+#lista{
+    display: flex;
+    justify-content: space-evenly;
+}
