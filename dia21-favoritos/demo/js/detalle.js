@@ -37,14 +37,24 @@ fetch(url)
 /*                      Guardar en favorito                         */
 
 /* Crear un array vacio para luego ser completado con lo que trae localStorage */
+let favoritos = [];
 
 /* Recuperar localStorage de la key "favoritos" */
+let recuperoStorage = localStorage.getItem('favoritos');
 
 /* Preguntar si es distinto de nulo para ver si tiene info */
+if (recuperoStorage != null) {
+    favoritos = JSON.parse(recuperoStorage);
+}
 
 /* Recurperar el elemento del DOM */
+let fav = document.querySelector('#fav');
 
 /* preguntar si el array favoritos incluye este ID - si lo incluye cambiar el texto a quitar de favoritos*/
+
+if (favoritos.includes(idpersonaje)) {
+    fav.innerText = 'Quitar de Favoritos'
+}
 
 /* agregar el evento click a el boton de Fav - preguntar si el array de favoritos inlcuye el ID del personaje
 
@@ -53,5 +63,19 @@ FALSE = si clickeo el btn y NOO existe quiero pushearlo y cambiar el texto del b
 
 Pasar FAVORITOS a JSON y subirlos a localStorage
 */
+
+fav.addEventListener('click', function() {
+    if (favoritos.includes(idpersonaje)) {
+        let indice = favoritos.indexOf(idpersonaje)
+        favoritos.splice(indice, 1);
+        fav.innerText = 'Agregar a favorito'
+    } else {
+        favoritos.push(idpersonaje);
+        fav.innerText = 'Quitar de favorito'
+    }
+
+    let favoritosToString =JSON.stringify(favoritos);
+    localStorage.setItem('favoritos', favoritosToString )
+} )
 
 
