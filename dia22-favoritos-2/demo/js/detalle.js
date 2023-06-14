@@ -74,7 +74,7 @@ fav.addEventListener('click', function() {
         fav.innerText = 'Quitar de favorito'
     }
 
-    let favoritosToString =JSON.stringify(favoritos);
+    let favoritosToString = JSON.stringify(favoritos);
     localStorage.setItem('favoritos', favoritosToString )
 } )
 
