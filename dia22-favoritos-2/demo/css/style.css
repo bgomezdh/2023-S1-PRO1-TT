@@ -1,13 +1,38 @@
+body {
+  background-image: linear-gradient(24deg, #1717e5, transparent 21%),
+    linear-gradient(198deg, rgba(255, 193, 7, 0.2) 11%, transparent 0),
+    linear-gradient(
+      50deg,
+      #6610f2 5%,
+      #6f42c1 32%,
+      #d63384 35%,
+      #6610f2 65%,
+      #fd7e14 83%,
+      #ffc107 91%
+    );
+    color: white;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+a{
+    color: white;
+}
 #lista a article img {
-    width: 200px;
+  width: 200px;
 }
 
 #lista a article p {
-    text-align: center;
+  text-align: center;
 }
 
+#lista {
+  display: flex;
+  justify-content: space-evenly;
+}
 
-#lista{
-    display: flex;
-    justify-content: space-evenly;
+.characterList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
